@@ -65,7 +65,7 @@ def dashboard(request):
     context = {
         'contacts':user_contacts
     }  
-    return render(request, 'account/dashboard.html', {})
+    return render(request, 'account/dashboard.html', context)
 
 def logout(request):
     if request.method == 'POST':
